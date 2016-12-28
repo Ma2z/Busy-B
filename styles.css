@@ -1,0 +1,435 @@
+body {
+  overflow-x: hidden;
+}
+
+
+.navbar.navbar-default {
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 0px !important;
+  border: none !important;
+  background-color: #EEDE53 !important;
+  box-sizing: border-box;
+  display: block;
+}
+
+.navbar-collapse.collapse {
+  display: block!important;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-nav.middle {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.navbar-nav li {
+  font-family: "brandon-grotesque";
+  font-size: 20pt;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: black !important;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: rgba(0,0,0,.5)	 !important;
+}
+
+/*RESPONSIVE FONT*/
+@media (max-width: 540px) {
+  .navbar-nav li {
+    font-size: 16pt;
+  }
+}
+
+/*END RESPONSIVE FONT*/
+
+/*END NAVBAR*/
+
+/*INTRO*/
+
+.intro {
+  height: 100%;
+  width: 100%;
+  background-image: url("assets/triangle-5.svg");
+  background-color: #EEDE53;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -5.7vh;
+}
+
+.intro #header {
+  padding-top: 11%;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "brandon-grotesque";
+}
+
+.intro #header h1{
+  font-size: 70pt;
+  font-weight: 400;
+  font-style: underline;
+  color: black;
+}
+
+.intro #sub-header {
+  padding-top: 20px;
+  font-family: "brandon-grotesque";
+}
+
+.intro #sub-header p {
+  font-size: 35pt;
+  font-weight: 200;
+  color: black;
+}
+
+.intro #drawing {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.drawing-wrapper {
+  display: block;
+  height: 15%;
+  width: 15%;
+  margin: 0 auto;
+}
+
+
+/*END INTRO*/
+
+/*START WHAT*/
+
+.what {
+  width: 100%;
+  background-color: #E9F1DF;
+}
+
+.what #hook-1 {
+  padding-top: 1%;
+  font-family: "baskerville old face";
+  text-align: center;
+}
+.what #hook-1 h1 {
+  font-size: 60pt;
+  color: black;
+}
+
+.what #hook-2 h2 {
+  font-family: "brandon-grotesque";
+  font-weight: 300;
+  text-align: center;
+  color: black;
+  font-size: 30pt;
+  font-style: italic;
+  margin: 10px;
+}
+
+.what .house-with-line
+  {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    margin-top: 2%;
+  }
+
+p#box-head {
+  font-family: "Brandon-Grotesque";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15pt;
+  line-height: 15px;
+  color: black;
+}
+
+/*START SYMBOL GRID*/
+
+.what #symbols {
+  margin: auto;
+  padding-top: 22%;
+  padding-bottom: 6.5%;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.what #box-top-left {
+  display: inline-block;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+
+}
+
+.what #box-top-right {
+  display: inline-block;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.what #box-bottom-right {
+  display: inline-block;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.what #box-bottom-left {
+  display: inline-block;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.what #box-top-right {
+  display: inline-block;
+  border-left: 1px solid black;
+}
+
+.what #box-left {
+  display: inline-block;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.what #box-right {
+  display: inline-block;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.what .content{
+  margin: 0 auto;
+  padding-bottom: 60%;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.what .symbol-wrapper {
+  height: 24%;
+  width: 24%;
+  position: absolute;
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 20%;
+  padding-top: 2%;
+  padding-bottom: 10%;
+}
+
+.what .p-wrapper {
+  width: 82%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  margin-top: 1.66%;
+  padding-top: 1%;
+}
+
+
+/*END SYMBOL GRID*/
+
+/*START RESPONSIVE LG*/
+@media (min-width: 992px) {
+  .what #flex {
+    display: flex;
+  }
+
+  .what #symbols {
+    padding-top: 20%;
+  }
+/*LG SYMBOL GRID*/
+  .what .col-md-3.top{
+    border-top: none !important;
+  }
+
+  .what .col-md-3.bottom{
+    border-bottom: none !important;
+  }
+
+  .what .col-md-3.top.border-right{
+    border-right: 2px solid black !important;
+  }
+
+  .what .col-md-3.bottom.border-right{
+    border-right: 2px solid black !important;
+  }
+
+  .what .content {
+  padding-bottom:3%;
+  }
+
+  .what .p-wrapper {
+    position: relative;
+    float: none;
+    margin: auto;
+    padding-top: 5%;
+  }
+
+  .what .symbol-wrapper {
+    position: relative;
+    float: none;
+    margin: auto;
+    margin-top: 5%;
+    height: 35%;
+    width: 35%;
+  }
+
+  .what p#box-head {
+    font-size: 24px;
+  }
+
+/*LG SYMBOL GRID*/
+}
+/*END RESPONSIVE LG*/
+
+/*XS SYMBOLS*/
+@media (max-width:310px) {
+  .what {
+    height: 100vh;
+  }
+}
+/*END XS SYMBOLS*/
+
+/*XL POSITIONING*/
+@media (min-width: 1200px) {
+  .what #symbols {
+    padding-top: 15.8%;
+  }
+}
+/*END XL POSITIONING*/
+
+/*END WHAT*/
+
+/*START WHO*/
+.who {
+  width: 100%;
+  background-color: #E9F1DF;
+}
+
+.who #header {
+  text-align: center;
+  font-family: "baskerville old face";
+  padding-top: 1%;
+}
+.who #header h1 {
+  font-style: normal;
+  font-size: 60pt;
+  color: black;
+}
+/*WHO IMGS*/
+.who #pictures {
+  padding-top: 5%;
+  padding-bottom: 7.5%;
+}
+
+.who .people-wrapper {
+  height: 80%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.who .bee-wrapper {
+  height: 15%;
+  width: 15%;
+  display: block;
+  padding-top: 80%;
+  margin: auto;
+}
+/*END IMGS*/
+
+/*DESCRIPTION*/
+.who #yellow {
+  background-color: #EEDE53;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "brandon-grotesque";
+  text-align: center;
+}
+.container-fluid, #special {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*LEFT*/
+div#left.col-md-6 {
+  border-right: 1px solid black;
+  padding: 1% 2% 2% 2%;
+}
+div#left.col-md-6 h2{
+  font-size: 25pt;
+  font-style: italic;
+  font-weight: 400;
+  color: black;
+}
+div#left.col-md-6 p {
+  font-size: 17pt;
+  color: black;
+  font-weight: 300;
+}
+/*END LEFT*/
+/*RIGHT*/
+div#right.col-md-6 {
+  border-left: 1px solid black;
+  padding: 1% 3% 2% 3%;
+}
+div#right.col-md-6 h2{
+  font-size: 25pt;
+  font-style: italic;
+  font-weight: 400;
+  color: black;
+}
+div#right.col-md-6 p {
+  font-size: 17pt;
+  color: black;
+  font-weight: 300;
+}
+/*END RIGHT*/
+/*END DESCRIPTION*/
+/*END WHO*/
+
+/*START CONTACT*/
+.contact {
+  background-color: #E9F1DF;
+  height: 100vh;
+  width: 100%;
+  font-family: "brandon-grotesque";
+  text-align: center;
+}
+
+.contact #questions h2 {
+  font-family: "baskerville old face";
+  padding-top: 4%;
+  font-size: 48pt;
+  color: black;
+}
+
+.contact #header h1 {
+  padding:10%;
+  font-size: 72pt;
+  color: black;
+}
+
+.contact #device p {
+  font-size: 18pt;
+  font-weight: 400;
+  color: black;
+}
+
+.contact #specific p {
+  font-size: 18pt;
+  font-weight: 300;
+}
