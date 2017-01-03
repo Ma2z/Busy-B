@@ -1,7 +1,158 @@
+/*RESPONSIVE BORDER REMOVAL*/
+@media (max-width: 991px) {
+  .who div#left.col-md-6 {
+    border-right: none;
+  }
+  .who div#right.col-md-6 {
+    border-left: none;
+  }
+}
+/*END RESPONSIVE BORDER REMOVAL*/
+
+/*RESPONSIVE FONT SIZES*/
+
+/*CONTACT MEDIUM*/
+@media (max-width: 712px) {
+  .contact div#specific p {
+    font-size: 15pt;
+    margin-top: 5px;
+    margin-left: -45px;
+  }
+}
+/*END CONTACT MEDIUM*/
+
+/*NAVBAR*/
+@media (max-width: 540px) {
+  .navbar-nav li {
+    font-size: 16pt;
+  }
+}
+/*END NAVBAR*/
+
+@media (max-width: 461px) {
+
+/*HEADER*/
+  .intro #header h1 {
+    font-size: 55pt;
+  }
+
+  .intro #sub-header p {
+    font-size: 24pt;
+  }
+/*END HEADER*/
+
+/*WHAT*/
+ .what #hook-1 h1 {
+   font-size: 45pt;
+ }
+/*END WHAT*/
+
+/*WHO*/
+ .who div#header h1 {
+   font-size: 45pt;
+ }
+/*END WHO*/
+
+/*CONTACT*/
+
+.contact div#header h1 {
+  font-size: 45pt;
+  padding: 15%;
+}
+
+.contact div#questions h2 {
+  font-size: 35pt;
+}
+
+.contact div#specific p {
+  font-size: 11pt;
+}
+/*END CONTACT*/
+}
+
+/*END RESPONSIVE FONT SIZES*/
+
+/*RESPONSIVE SYMBOL GRID*/
+
+/*START RESPONSIVE LG*/
+@media (min-width: 992px) {
+  .what #flex {
+    display: flex;
+  }
+
+  .what #symbols {
+    padding-top: 20%;
+  }
+/*LG SYMBOL GRID*/
+  .what .col-md-3.top{
+    border-top: none !important;
+  }
+
+  .what .col-md-3.bottom{
+    border-bottom: none !important;
+  }
+
+  .what .col-md-3.top.border-right{
+    border-right: 2px solid black !important;
+  }
+
+  .what .col-md-3.bottom.border-right{
+    border-right: 2px solid black !important;
+  }
+
+  .what .content {
+  padding-bottom:3%;
+  }
+
+  .what .p-wrapper {
+    position: relative;
+    float: none;
+    margin: auto;
+    padding-top: 5%;
+  }
+
+  .what .symbol-wrapper {
+    position: relative;
+    float: none;
+    margin: auto;
+    margin-top: 5%;
+    height: 35%;
+    width: 35%;
+  }
+
+  .what p#box-head {
+    font-size: 24px;
+  }
+
+/*LG SYMBOL GRID*/
+}
+/*END RESPONSIVE LG*/
+
+/*XS SYMBOLS*/
+@media (max-width:310px) {
+  .what {
+    height: 100vh;
+  }
+}
+/*END XS SYMBOLS*/
+
+/*XL POSITIONING*/
+@media (min-width: 1200px) {
+  .what #symbols {
+    padding-top: 15.8%;
+  }
+}
+/*END XL POSITIONING*/
+
+/*END RESPONSIVE SYMBOL GRID*/
+
+/*START NORMAL*/
+
 body {
   overflow-x: hidden;
 }
 
+/*START NAVBAR*/
 
 .navbar.navbar-default {
   justify-content: center;
@@ -45,15 +196,6 @@ body {
 .navbar-default .navbar-nav>li>a:hover {
   color: rgba(0,0,0,.5)	 !important;
 }
-
-/*RESPONSIVE FONT*/
-@media (max-width: 540px) {
-  .navbar-nav li {
-    font-size: 16pt;
-  }
-}
-
-/*END RESPONSIVE FONT*/
 
 /*END NAVBAR*/
 
@@ -242,75 +384,7 @@ p#box-head {
 
 /*END SYMBOL GRID*/
 
-/*START RESPONSIVE LG*/
-@media (min-width: 992px) {
-  .what #flex {
-    display: flex;
-  }
 
-  .what #symbols {
-    padding-top: 20%;
-  }
-/*LG SYMBOL GRID*/
-  .what .col-md-3.top{
-    border-top: none !important;
-  }
-
-  .what .col-md-3.bottom{
-    border-bottom: none !important;
-  }
-
-  .what .col-md-3.top.border-right{
-    border-right: 2px solid black !important;
-  }
-
-  .what .col-md-3.bottom.border-right{
-    border-right: 2px solid black !important;
-  }
-
-  .what .content {
-  padding-bottom:3%;
-  }
-
-  .what .p-wrapper {
-    position: relative;
-    float: none;
-    margin: auto;
-    padding-top: 5%;
-  }
-
-  .what .symbol-wrapper {
-    position: relative;
-    float: none;
-    margin: auto;
-    margin-top: 5%;
-    height: 35%;
-    width: 35%;
-  }
-
-  .what p#box-head {
-    font-size: 24px;
-  }
-
-/*LG SYMBOL GRID*/
-}
-/*END RESPONSIVE LG*/
-
-/*XS SYMBOLS*/
-@media (max-width:310px) {
-  .what {
-    height: 100vh;
-  }
-}
-/*END XS SYMBOLS*/
-
-/*XL POSITIONING*/
-@media (min-width: 1200px) {
-  .what #symbols {
-    padding-top: 15.8%;
-  }
-}
-/*END XL POSITIONING*/
 
 /*END WHAT*/
 
@@ -337,9 +411,12 @@ p#box-head {
 }
 
 .who .people-wrapper {
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   margin: 0 auto;
+}
+.who .people-wrapper img {
+border-radius: 50%;
 }
 
 .who .bee-wrapper {
@@ -367,7 +444,7 @@ p#box-head {
 /*LEFT*/
 div#left.col-md-6 {
   border-right: 1px solid black;
-  padding: 1% 2% 2% 2%;
+  padding: 1% 2% 2% 3%;
 }
 div#left.col-md-6 h2{
   font-size: 25pt;
@@ -384,7 +461,7 @@ div#left.col-md-6 p {
 /*RIGHT*/
 div#right.col-md-6 {
   border-left: 1px solid black;
-  padding: 1% 3% 2% 3%;
+  padding: 1% 2% 2% 3%;
 }
 div#right.col-md-6 h2{
   font-size: 25pt;
@@ -404,14 +481,15 @@ div#right.col-md-6 p {
 /*START CONTACT*/
 .contact {
   background-color: #E9F1DF;
-  height: 100vh;
   width: 100%;
   font-family: "brandon-grotesque";
   text-align: center;
 }
 
 .contact #questions h2 {
-  font-family: "baskerville old face";
+  font-family: "brandon-grotesque";
+  font-style: italic;
+  font-weight: 300;
   padding-top: 4%;
   font-size: 48pt;
   color: black;
@@ -419,8 +497,9 @@ div#right.col-md-6 p {
 
 .contact #header h1 {
   padding:10%;
-  font-size: 72pt;
+  font-size: 65pt;
   color: black;
+  margin-bottom: 20px;
 }
 
 .contact #device p {
@@ -433,3 +512,8 @@ div#right.col-md-6 p {
   font-size: 18pt;
   font-weight: 300;
 }
+
+.contact div.container {
+  padding-bottom: 12%;
+}
+/*END CONTACT*/
