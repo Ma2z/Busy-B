@@ -2,153 +2,7 @@ body {
   overflow-x: hidden;
 }
 
-/*RESPONSIVE BORDER REMOVAL*/
-@media (max-width: 991px) {
-  .who div#left.col-md-6 {
-    border-right: none;
-  }
-  .who div#right.col-md-6 {
-    border-left: none;
-  }
-}
-/*END RESPONSIVE BORDER REMOVAL*/
 
-/*RESPONSIVE FONT SIZES*/
-
-/*CONTACT MEDIUM*/
-@media (max-width: 712px) {
-  .contact div#specific p {
-    font-size: 15pt;
-    margin-top: 5px;
-    margin-left: -45px;
-  }
-}
-/*END CONTACT MEDIUM*/
-
-/*NAVBAR*/
-@media (max-width: 540px) {
-  .navbar-nav li {
-    font-size: 16pt;
-  }
-}
-/*END NAVBAR*/
-
-@media (max-width: 461px) {
-
-/*HEADER*/
-  .intro #header h1 {
-    font-size: 55pt;
-  }
-
-  .intro #sub-header p {
-    font-size: 24pt;
-  }
-/*END HEADER*/
-
-/*WHAT*/
- .what #hook-1 h1 {
-   font-size: 45pt;
- }
-/*END WHAT*/
-
-/*WHO*/
- .who div#header h1 {
-   font-size: 45pt;
- }
-/*END WHO*/
-
-/*CONTACT*/
-
-.contact div#header h1 {
-  font-size: 45pt;
-  padding: 15%;
-}
-
-.contact div#questions h2 {
-  font-size: 35pt;
-}
-
-.contact div#specific p {
-  font-size: 11pt;
-}
-/*END CONTACT*/
-}
-
-/*END RESPONSIVE FONT SIZES*/
-
-/*RESPONSIVE SYMBOL GRID*/
-
-/*START RESPONSIVE LG*/
-@media (min-width: 992px) {
-  .what #flex {
-    display: flex;
-  }
-
-  .what #symbols {
-    padding-top: 20%;
-  }
-/*LG SYMBOL GRID*/
-  .what .col-md-3.top{
-    border-top: none !important;
-  }
-
-  .what .col-md-3.bottom{
-    border-bottom: none !important;
-  }
-
-  .what .col-md-3.top.border-right{
-    border-right: 2px solid black !important;
-  }
-
-  .what .col-md-3.bottom.border-right{
-    border-right: 2px solid black !important;
-  }
-
-  .what .content {
-  padding-bottom:3%;
-  }
-
-  .what .p-wrapper {
-    position: relative;
-    float: none;
-    margin: auto;
-    padding-top: 5%;
-  }
-
-  .what .symbol-wrapper {
-    position: relative;
-    float: none;
-    margin: auto;
-    margin-top: 5%;
-    height: 35%;
-    width: 35%;
-  }
-
-  .what p#box-head {
-    font-size: 24px;
-  }
-
-/*LG SYMBOL GRID*/
-}
-/*END RESPONSIVE LG*/
-
-/*XS SYMBOLS*/
-@media (max-width:310px) {
-  .what {
-    height: 100vh;
-  }
-}
-/*END XS SYMBOLS*/
-
-/*XL POSITIONING*/
-@media (min-width: 1200px) {
-  .what #symbols {
-    padding-top: 15.8%;
-  }
-}
-/*END XL POSITIONING*/
-
-/*END RESPONSIVE SYMBOL GRID*/
 
 /*START NORMAL*/
 
@@ -517,3 +371,151 @@ div#right.col-md-6 p {
   padding-bottom: 12%;
 }
 /*END CONTACT*/
+
+/*RESPONSIVE BORDER REMOVAL*/
+@media (max-width: 991px) {
+  .who div#left.col-md-6 {
+    border-right: none;
+  }
+  .who div#right.col-md-6 {
+    border-left: none;
+  }
+}
+/*END RESPONSIVE BORDER REMOVAL*/
+
+/*RESPONSIVE FONT SIZES*/
+
+/*CONTACT MEDIUM*/
+@media (max-width: 712px) {
+  .contact div#specific p {
+    font-size: 15pt;
+    margin-top: 5px;
+    margin-left: -45px;
+  }
+}
+/*END CONTACT MEDIUM*/
+
+/*NAVBAR*/
+@media (max-width: 540px) {
+  .navbar-nav li {
+    font-size: 16pt;
+  }
+}
+/*END NAVBAR*/
+
+@media (max-width: 461px) {
+
+/*HEADER*/
+  .intro #header h1 {
+    font-size: 55pt;
+  }
+
+  .intro #sub-header p {
+    font-size: 24pt;
+  }
+/*END HEADER*/
+
+/*WHAT*/
+ .what #hook-1 h1 {
+   font-size: 45pt;
+ }
+/*END WHAT*/
+
+/*WHO*/
+ .who div#header h1 {
+   font-size: 45pt;
+ }
+/*END WHO*/
+
+/*CONTACT*/
+
+.contact div#header h1 {
+  font-size: 45pt;
+  padding: 15%;
+}
+
+.contact div#questions h2 {
+  font-size: 35pt;
+}
+
+.contact div#specific p {
+  font-size: 11pt;
+}
+/*END CONTACT*/
+}
+
+/*END RESPONSIVE FONT SIZES*/
+
+/*RESPONSIVE SYMBOL GRID*/
+
+/*START RESPONSIVE LG*/
+@media (min-width: 992px) {
+  .what #flex {
+    display: flex;
+  }
+
+  .what #symbols {
+    padding-top: 20%;
+  }
+/*LG SYMBOL GRID*/
+  .what .col-md-3.top{
+    border-top: none !important;
+  }
+
+  .what .col-md-3.bottom{
+    border-bottom: none !important;
+  }
+
+  .what .col-md-3.top.border-right{
+    border-right: 2px solid black !important;
+  }
+
+  .what .col-md-3.bottom.border-right{
+    border-right: 2px solid black !important;
+  }
+
+  .what .content {
+  padding-bottom:3%;
+  }
+
+  .what .p-wrapper {
+    position: relative;
+    float: none;
+    margin: auto;
+    padding-top: 5%;
+  }
+
+  .what .symbol-wrapper {
+    position: relative;
+    float: none;
+    margin: auto;
+    margin-top: 5%;
+    height: 35%;
+    width: 35%;
+  }
+
+  .what p#box-head {
+    font-size: 24px;
+  }
+
+/*LG SYMBOL GRID*/
+}
+/*END RESPONSIVE LG*/
+
+/*XS SYMBOLS*/
+@media (max-width:310px) {
+  .what {
+    height: 100vh;
+  }
+}
+/*END XS SYMBOLS*/
+
+/*XL POSITIONING*/
+@media (min-width: 1200px) {
+  .what #symbols {
+    padding-top: 15.8%;
+  }
+}
+/*END XL POSITIONING*/
+
+/*END RESPONSIVE SYMBOL GRID*/
