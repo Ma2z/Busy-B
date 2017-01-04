@@ -1,8 +1,6 @@
-body {
+html, body, .overflowWrap {
   overflow-x: hidden;
 }
-
-
 
 /*START NORMAL*/
 
